@@ -1,37 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
-body {
-  margin: 0;
-  padding: 0 3%;
-  font-family: "Mulish", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.2em;
-  color: #ffffff;
+body::before {
+  content: "";
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
 
-  background: linear-gradient(
-    -45deg,
-    #000000,
-    #3b0000,
-    #8b0000,
-    #ff0000,
-    #000000
+  background: radial-gradient(
+    circle,
+    rgba(255, 0, 0, 0.15) 0%,
+    transparent 70%
   );
 
-  background-size: 400% 400%;
-  animation: gradientMove 10s ease infinite;
-}
-@keyframes rotateBg {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-
+  animation: rotateBg 20s linear infinite;
+  z-index: -1;
 }
 
 h1,
