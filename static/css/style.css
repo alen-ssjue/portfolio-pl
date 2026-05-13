@@ -1,32 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
-body::before {
-  content: "";
-  position: fixed;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-
-  background: radial-gradient(
-    circle,
-    rgba(255, 0, 0, 0.15) 0%,
-    transparent 70%
-  );
-
-  animation: rotateBg 20s linear infinite;
-  z-index: -1;
+body {
+  background: red;
 }
-
-@keyframes rotateBg {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 h1,
 h2,
 p {
@@ -339,16 +314,4 @@ ul {
   border: none;
   cursor: pointer;
 }
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-  }
 
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
