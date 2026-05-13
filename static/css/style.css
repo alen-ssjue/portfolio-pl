@@ -1,11 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
 body {
-  background: red;
-}
-h1,
-h2,
-p {
   margin: 0;
+  padding: 0 3%;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+
+  background: linear-gradient(
+    -45deg,
+    #000000,
+    #3b0000,
+    #8b0000,
+    #ff0000,
+    #000000
+  );
+
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+}
+@keyframes rotateBg {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
 }
 
 h1,
@@ -314,4 +340,5 @@ ul {
   border: none;
   cursor: pointer;
 }
+
 
